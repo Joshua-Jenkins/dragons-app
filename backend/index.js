@@ -20,4 +20,4 @@ setTimeout(() => {
 
 console.log('fooey', fooey);
 console.log('baloo', baloo);
-console.log('mimar', mimar);
+console.log('minar', mimar);
