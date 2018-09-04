@@ -1,9 +1,9 @@
 const express = require('express');
-const GenerationEngine = require('./engine');
+const GenerationEngine = require('./generation/engine');
 
 const app = express();
 const engine = new GenerationEngine();
-const port = 3000;
+
 
 engine.start();
 
@@ -13,4 +13,6 @@ app.get('/dragon/new', (req, res) => {
   });
 });
 
-app.listen(port, () => console.log(`listening port ${port}`));
+
+
+module.exports = app;
